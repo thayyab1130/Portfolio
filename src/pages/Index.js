@@ -7,7 +7,7 @@ export default function Index() {
     <div>
         <Navbar/>
         <Hero/>
-        hkdfhalkdsjh
+        test
     </div>
   )
 }
