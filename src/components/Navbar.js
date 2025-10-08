@@ -36,6 +36,7 @@ export default function Navbar() {
     const resumeUrl = `${baseUrl}/resume/Mohammed_thayyab_resume_full.pdf`;
     try {
       window.open(resumeUrl, "_blank");
+      console.log("Resume opened successfully");
     } catch (error) {
       console.error("Failed to open resume:", error);
       toast.error("Failed to open resume. Please try again later.");
