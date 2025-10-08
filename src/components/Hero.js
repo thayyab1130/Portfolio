@@ -31,6 +31,7 @@ export default function Hero() {
             <Button
               size="lg" 
               className="bg-primary text-primary-foreground hover:bg-primary/90 group"
+              href="#projects"
             >
               View Projects
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
