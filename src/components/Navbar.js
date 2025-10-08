@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/Button";
+import { toast } from 'react-toastify';
 
 export default function Navbar() {
 
@@ -32,8 +33,13 @@ export default function Navbar() {
   ];
 
   const openResume = () => {
-    const resumeUrl = "/resume/Mohammed_thayyab_resume_full.pdf";
-    window.open(resumeUrl, "_blank");
+    const resumeUrl = `${baseUrl}/resume/Mohammed_thayyab_resume_full.pdf`;
+    try {
+      window.open(resumeUrl, "_blank");
+    } catch (error) {
+      console.error("Failed to open resume:", error);
+      toast.error("Failed to open resume. Please try again later.");
+    }
   };
 
   return (

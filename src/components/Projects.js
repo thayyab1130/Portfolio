@@ -9,7 +9,7 @@ export default function Projects() {
     {
       title: "Genimagin",
       description: "AI-powered image generator with advanced filters and customization options.",
-      image: "/images/genimagin.jpg",
+      image: "/images/Genimagin.jpg",
       tech: ["React", "Node.js","Express.js", "MySQL"],
       imageClassName:"px-5 bg-white",
       github: null,
