@@ -8,6 +8,11 @@ export default function Navbar() {
   const[isMobileMenuOpen,setIsMobileMenuOpen]=useState(false);
   
   const myName = process.env.REACT_APP_MY_NAME;
+  const baseUrl = process.env.REACT_APP_BASE_URL;
+
+  useEffect(()=>{
+    console.log("baseurl : ",baseUrl);
+  },[])
 
   useEffect(()=>{
     const handleScorll=()=>{
